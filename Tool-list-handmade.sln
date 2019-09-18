@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29209.62
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tool-list-handmade", "Tool-list-handmade\Tool-list-handmade.csproj", "{8D63D710-BA16-41FF-9A20-964D2F3F5F68}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Tool auto list handemade", "D:\Tool-list-handmade\Tool auto list handemade\Tool auto list handemade.vdproj", "{666755EE-79E2-442B-B3BC-367703876A62}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D63D710-BA16-41FF-9A20-964D2F3F5F68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D63D710-BA16-41FF-9A20-964D2F3F5F68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D63D710-BA16-41FF-9A20-964D2F3F5F68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D63D710-BA16-41FF-9A20-964D2F3F5F68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{666755EE-79E2-442B-B3BC-367703876A62}.Debug|Any CPU.ActiveCfg = Debug
+		{666755EE-79E2-442B-B3BC-367703876A62}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F2636CE-D533-41BB-8CD6-0252DB2B0F1C}
+	EndGlobalSection
+EndGlobal
