@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tool-list-handmade", "Tool-
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Tool auto list handemade", "D:\Tool-list-handmade\Tool auto list handemade\Tool auto list handemade.vdproj", "{666755EE-79E2-442B-B3BC-367703876A62}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{AD6E18E7-2406-444F-9829-CCD6375DA3D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{8D63D710-BA16-41FF-9A20-964D2F3F5F68}.Release|Any CPU.Build.0 = Release|Any CPU
 		{666755EE-79E2-442B-B3BC-367703876A62}.Debug|Any CPU.ActiveCfg = Debug
 		{666755EE-79E2-442B-B3BC-367703876A62}.Release|Any CPU.ActiveCfg = Release
+		{AD6E18E7-2406-444F-9829-CCD6375DA3D3}.Debug|Any CPU.ActiveCfg = Debug
+		{AD6E18E7-2406-444F-9829-CCD6375DA3D3}.Debug|Any CPU.Build.0 = Debug
+		{AD6E18E7-2406-444F-9829-CCD6375DA3D3}.Release|Any CPU.ActiveCfg = Release
+		{AD6E18E7-2406-444F-9829-CCD6375DA3D3}.Release|Any CPU.Build.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

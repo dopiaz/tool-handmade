@@ -62,8 +62,6 @@ namespace Tool_list_handmade
             options.AddArgument(@"user-data-dir=profile");
             driver = new ChromeDriver(options);
         }
-      
-
         private void UpdateCache(string key, string value)
         {
             string json = File.ReadAllText("settings.json");
@@ -120,14 +118,23 @@ namespace Tool_list_handmade
 
             for (int i = 0; i < products.Count; i++)
             {
-                driver.Url = "https://sellercentral.amazon.com/products/clone?marketplaceID=" + tb_market_id.Text + "&ref=xx_myiclone_cont_myifba&sku=" + tb_sku_clone.Text + "&asin=" + tb_asin_clone.Text + "&productType=GUILD_APPAREL#product";
+                //AutoItX3 autoItX3 = new AutoItX3();
+
+                IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
+                string Url = "https://sellercentral.amazon.com/products/clone?marketplaceID=" + tb_market_id.Text + "&ref=xx_myiclone_cont_myifba&sku=" + tb_sku_clone.Text + "&asin=" + tb_asin_clone.Text + "&productType=GUILD_APPAREL#product";
+                driver.Url = Url;
+                //js.ExecuteScript("window.location.href = '" + Url +"'");
                 Thread.Sleep(5000);
                 //item_name
-                
+
+                //js.ExecuteScript("document.getElementById('item_name').select()");
+                //Thread.Sleep(1000);
+                //autoItX3.Send(products[i].name);
                 driver.FindElement(By.Id("item_name")).Clear();
+                Thread.Sleep(1000);
                 driver.FindElement(By.Id("item_name")).SendKeys(products[i].name);
                 Thread.Sleep(2000);
-                IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
+                
                 js.ExecuteScript("document.getElementById('hub-spoke-image-menu-item').click()");
                 Thread.Sleep(2000);
                 IReadOnlyList<IWebElement> imagesUpload = driver.FindElements(By.ClassName("ilui-image-select-container"));
@@ -135,38 +142,70 @@ namespace Tool_list_handmade
                 imagesUpload[1].Click();
                 Thread.Sleep(2000);
 
-                AutoItX3 autoItX3 = new AutoItX3();
-                autoItX3.WinActive("Open");
-                autoItX3.Send(products[i].patch);
-                Thread.Sleep(2000);
-                autoItX3.Send("{ENTER}");
+
+                //autoItX3.WinActive("Open");
+                //Thread.Sleep(2000);
+                //autoItX3.Send(products[i].patch);
+                //Thread.Sleep(2000);
+                //autoItX3.Send("{ENTER}");
+
+                SendKeys.SendWait(products[i].patch);
+                Thread.Sleep(1000);
+                SendKeys.SendWait(@"{Enter}");
+
                 Thread.Sleep(2000);
                 for (int j = 2; j <imagesUpload.Count && j <= patchOtherImages.Count + 1; j++)
                 {
                     imagesUpload[j].Click();
+                    Thread.Sleep(2000);
+                    SendKeys.SendWait(patchOtherImages[j - 2]);
                     Thread.Sleep(1000);
-                    AutoItX3 autoItX3Temp = new AutoItX3();
-                    autoItX3Temp.WinActive("Open");
-                    autoItX3Temp.Send(patchOtherImages[j - 2]);
-                    Thread.Sleep(2000);
-                    autoItX3Temp.Send("{ENTER}");
-                    Thread.Sleep(2000);
+                    SendKeys.SendWait(@"{Enter}");
+                    //AutoItX3 autoItX3Temp = new AutoItX3();
+                    //autoItX3Temp.WinActive("Open");
+                    //Thread.Sleep(1000);
+                    //autoItX3Temp.Send(patchOtherImages[j - 2]);
+                    //Thread.Sleep(2000);
+                    //autoItX3Temp.Send("{ENTER}");
+                    //Thread.Sleep(2000);
                 }
-                Thread.Sleep(1000);
+                //if (autoItX3.WinExists("Open") == 1)
+                //{
+                //    autoItX3.WinClose("Open");
+                //}
+                Thread.Sleep(5000);
+                //autoItX3.WinActive("Clone Your Product");
                 moveFile(products[i].fullName);
                 try
                 {
-                    js.ExecuteScript("document.getElementById('ilui-publish-button-announce').click()");
-                }catch(Exception e)
+                    IWebElement submmit = driver.FindElement(By.Id("ilui-publish-button"));
+                    int time = 0;
+                    while (submmit.GetAttribute("class").Contains("a-button-disabled") && time < 20)
+                    {
+                        time++;
+                        Thread.Sleep(1000);
+                    }
+                    if(time == 20)
+                    {
+                        continue;
+                    }
+                    submmit.Click();
+                    //js.ExecuteScript("document.querySelector('.ilui-publish-button').click()");
+                }
+                catch(Exception e)
                 {
+                    lb_error.Text = e.Message;
                     continue;
                 }
                 Thread.Sleep(4000);
             }
 
         }
+        void ThreadProc(string error)
+        {
+            MessageBox.Show(error);
+        }
 
-       
         private void Btn_start_Click(object sender, EventArgs e)
         {
             myThead = new Thread(Run);

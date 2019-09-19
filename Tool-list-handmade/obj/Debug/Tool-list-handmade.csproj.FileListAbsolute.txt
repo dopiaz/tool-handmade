@@ -16,3 +16,23 @@ C:\Users\User\source\repos\Tool-list-handmade\Tool-list-handmade\obj\Debug\Tool-
 C:\Users\User\source\repos\Tool-list-handmade\Tool-list-handmade\obj\Debug\Tool-list-handmade.csproj.CopyComplete
 C:\Users\User\source\repos\Tool-list-handmade\Tool-list-handmade\obj\Debug\Tool-list-handmade.exe
 C:\Users\User\source\repos\Tool-list-handmade\Tool-list-handmade\obj\Debug\Tool-list-handmade.pdb
+F:\Doi Handmade\tool-handmade\Tool-list-handmade\obj\Debug\Tool_list_handmade.createProfile.resources
+F:\Doi Handmade\tool-handmade\Tool-list-handmade\obj\Debug\Tool_list_handmade.Form1.resources
+F:\Doi Handmade\tool-handmade\Tool-list-handmade\obj\Debug\Tool_list_handmade.Properties.Resources.resources
+F:\Doi Handmade\tool-handmade\Tool-list-handmade\obj\Debug\Tool-list-handmade.csproj.GenerateResource.cache
+F:\Doi Handmade\tool-handmade\Tool-list-handmade\obj\Debug\Tool-list-handmade.csproj.CoreCompileInputs.cache
+F:\Doi Handmade\tool-handmade\Tool-list-handmade\bin\Debug\Tool-list-handmade.exe.config
+F:\Doi Handmade\tool-handmade\Tool-list-handmade\bin\Debug\Tool-list-handmade.exe
+F:\Doi Handmade\tool-handmade\Tool-list-handmade\bin\Debug\Tool-list-handmade.pdb
+F:\Doi Handmade\tool-handmade\Tool-list-handmade\bin\Debug\Newtonsoft.Json.dll
+F:\Doi Handmade\tool-handmade\Tool-list-handmade\bin\Debug\WebDriver.dll
+F:\Doi Handmade\tool-handmade\Tool-list-handmade\bin\Debug\Newtonsoft.Json.xml
+F:\Doi Handmade\tool-handmade\Tool-list-handmade\bin\Debug\WebDriver.xml
+F:\Doi Handmade\tool-handmade\Tool-list-handmade\obj\Debug\Interop.AutoItX3Lib.dll
+F:\Doi Handmade\tool-handmade\Tool-list-handmade\obj\Debug\Tool-list-handmade.csproj.ResolveComReference.cache
+F:\Doi Handmade\tool-handmade\Tool-list-handmade\obj\Debug\Tool-list-handmade.csproj.CopyComplete
+F:\Doi Handmade\tool-handmade\Tool-list-handmade\obj\Debug\Tool-list-handmade.exe
+F:\Doi Handmade\tool-handmade\Tool-list-handmade\obj\Debug\Tool-list-handmade.pdb
+F:\Doi Handmade\tool-handmade\Tool-list-handmade\obj\Debug\Tool-list-handmade.csprojAssemblyReference.cache
+F:\Doi Handmade\tool-handmade\Tool-list-handmade\bin\Debug\WebDriver.Support.dll
+F:\Doi Handmade\tool-handmade\Tool-list-handmade\bin\Debug\WebDriver.Support.xml
